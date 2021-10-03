@@ -1,0 +1,14 @@
+Job title : Python Developers 
+
+Company_name : TandA HR Solutions 
+
+Experience : 2 - 5 yrs 
+
+Location : Chandigarh 
+
+Required Skills : python  ,  git  ,  django 
+
+Job_description : Good to have working knowledge on unit testing of the Code and write Test Cases. Excellent to Have an account on GIT Hub Should have done projects on Python ,... More Details 
+
+details_url : https://www.timesjobs.com/job-detail/python-developers-tanda-hr-solutions-chandigarh-2-to-5-yrs-jobid-OtVSvO0kmYNzpSvf__PLUS__uAgZw==&source=srp 
+

@@ -1,0 +1,14 @@
+Job title : Python Developer 
+
+Company_name : TECHNOPARK TRIVANDRUM 
+
+Experience : 3 - 6 yrs 
+
+Location : Thiruvananthapuram 
+
+Required Skills : python  ,  django  ,  debugging  ,  mysql 
+
+Job_description : Brief description :We are looking for a Python Developer to join our development team and help us develop and maintain various software projects.Python Developer responsibilit... More Details 
+
+details_url : https://www.timesjobs.com/job-detail/python-developer-technopark-trivandrum-thiruvananthapuram-3-to-6-yrs-jobid-KeHFl2K6381zpSvf__PLUS__uAgZw==&source=srp 
+
