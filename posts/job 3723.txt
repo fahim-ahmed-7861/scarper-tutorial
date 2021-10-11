@@ -1,0 +1,21 @@
+Job title : Python Developer 
+
+Company_name : Visionpix Technologies LLP 
+
+Experience : 4 - 10 yrs 
+
+Location : Bengaluru / Bangalore 
+
+Required Skills : python  ,  oops  ,  technical skills  , 
+
+Job_description : Job - Python DeveloperSkills : Python ,  OOPsLocation : BangloreEducation : Be ,  MCASalary : 15 - 18 LakhsExperience : 4 - 10 YearsStrong Python developer wh... More Details 
+
+details_url : https://www.timesjobs.com/job-detail/python-developer-visionpix-technologies-llp-bengaluru-bangalore-4-to-10-yrs-jobid-EAoyvX9td4pzpSvf__PLUS__uAgZw==&source=srp 
+
+Job job_des : <div class="jd-desc job-description-main" id="applyFlowHideDetails_2">
+<h3>Job Description</h3>
+		        Job - Python Developer<br/><br/>Skills : Python, OOPs<br/><br/>Location : Banglore<br/><br/>Education : Be, MCA<br/><br/>Salary : 15 - 18 Lakhs<br/><br/>Experience : 4 - 10 Years<br/><br/>Job Description :<br/><br/>Strong Python developer who can work independently &amp; also technically mentoring and leading a small team<br/><br/>Primary Technical Skills Expectation:<br/><br/>- Good python programming experience &amp; object oriented concepts in PYTHON &amp;<br/><br/>- Experience in python frameworks<br/><br/><br/>- Should have excellent communicationskills
+	        </div> 
+
+skilltype : [<span class="jd-skill-tag"><a class="" href="https://www.timesjobs.com/jobskill/python-jobs" target="_blank" title="python Jobs">python</a> </span>, <span class="jd-skill-tag"><a class="" href="https://www.timesjobs.com/jobskill/oops-jobs" target="_blank" title="oops Jobs">oops</a> </span>, <span class="jd-skill-tag"><span class="">technical skills</span></span>] 
+

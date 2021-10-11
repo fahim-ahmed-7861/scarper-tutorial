@@ -1,0 +1,21 @@
+Job title : Python Engineer 
+
+Company_name : east india securities ltd. 
+
+Experience : 2 - 5 yrs 
+
+Location : Kolkata 
+
+Required Skills : python  ,  hadoop  ,  machine learning 
+
+Job_description : job_description   2  years of experience working with python    Strong analytical skills    Ability to churn scripting solutions with a quick turnaround time    Inclination to... More Details 
+
+details_url : https://www.timesjobs.com/job-detail/python-engineer-east-india-securities-ltd-kolkata-2-to-5-yrs-jobid-KEkE19WqPbFzpSvf__PLUS__uAgZw==&source=srp 
+
+Job job_des : <div class="jd-desc job-description-main" id="applyFlowHideDetails_2">
+<h3>Job Description</h3>
+		        job_description   <br/>2  years of experience working with python<br/>    Strong analytical skills<br/>    Ability to churn scripting solutions with a quick turnaround time<br/>    Inclination to learn new technologies<br/>    Preferably background knowledge of Data Science / Machine Learning / Hadoop.
+	        </div> 
+
+skilltype : [<span class="jd-skill-tag"><a class="" href="https://www.timesjobs.com/jobskill/python-jobs" target="_blank" title="python Jobs">python</a> </span>, <span class="jd-skill-tag"><a class="" href="https://www.timesjobs.com/jobskill/hadoop-jobs" target="_blank" title="hadoop Jobs">hadoop</a> </span>, <span class="jd-skill-tag"><a class="" href="https://www.timesjobs.com/jobskill/machine-learning-jobs" target="_blank" title="machine learning Jobs">machine learning</a> </span>] 
+

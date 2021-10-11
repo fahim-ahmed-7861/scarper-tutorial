@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-def details_page(pageUrl):
+def details_page(pageUrl, index, f):
     # print(pageUrl)
     req = requests.get(pageUrl)
 
@@ -12,74 +12,81 @@ def details_page(pageUrl):
     bsoup = BeautifulSoup(html, 'html.parser')
 
     job_des = bsoup.find('div', class_="jd-desc job-description-main")
-    basic_info = bsoup.find('div', class_='job-basic-info').find('a', class_='')
     skilltype = bsoup.find_all('span', class_='jd-skill-tag')
-    # if len(job_des) > 0:
-    #     if job_des[0] == ":":
-    #         job_des = job_des[1:]
+    # print(skilltype)
 
-    print(skilltype, '\n\n\n\n\n')
+    f.write(f"Job job_des : {job_des} \n\n")
+    f.write(f"skilltype : {skilltype} \n\n")
+    f.close()
 
 
-url = "https://www.timesjobs.com/candidate/job-search.html?searchType=personalizedSearch&from=submit&txtKeywords" \
-      "=python&txtLocation= "
+def mainPage(id):
+    url = f"https://www.timesjobs.com/candidate/job-search.html?from=submit&actualTxtKeywords=python&searchBy=0&rdoOperator=OR&searchType=personalizedSearch&luceneResultSize=25&postWeek=60&txtKeywords=python&pDate=I&sequence=1&startPage={id}"
+    r = requests.get(url)
 
-r = requests.get(url)
+    htmlContent = r.content
 
-htmlContent = r.content
+    soup = BeautifulSoup(htmlContent, 'html.parser')
 
-soup = BeautifulSoup(htmlContent, 'html.parser')
+    jobs = soup.find_all('li', class_='clearfix job-bx wht-shd-bx')
 
-jobs = soup.find_all('li', class_='clearfix job-bx wht-shd-bx')
+    # print(jobs)
 
-# print(jobs)
+    for index, job in enumerate(jobs):
+        title = job.find('h2').text.strip()
 
-for index, job in enumerate(jobs):
-    title = job.find('h2').text.strip()
+        company_name = job.find('h3', class_='joblist-comp-name').text.strip()
 
-    # print(title.string)
+        skill = job.find('span', class_='srp-skills').text.strip()
 
-    company_name = job.find('h3', class_='joblist-comp-name').text.strip()
+        job_description = job.find('ul', class_='list-job-dtl clearfix').find('li').text.replace('Job Description:',
+                                                                                                 '').replace(
+            'Job Description :',
+            '').strip()
 
-    # experience = job.find('ul', class_="top-jd-dtl clearfix")
+        extra = job.find('ul', class_='top-jd-dtl clearfix').find_all('li')
 
-    skill = job.find('span', class_='srp-skills').text.strip()
+        details_url = job.header.h2.a['href']
 
-    job_description = job.find('ul', class_='list-job-dtl clearfix').find('li').text.replace('Job Description:',
-                                                                                             '').replace(
-        'Job Description :',
-        '').strip()
+        experience = extra[0].text.replace('card_travel', '').strip()
+        Location = extra[1].text.replace('location_on', '').strip()
 
-    extra = job.find('ul', class_='top-jd-dtl clearfix').find_all('li')
+        pageNo =(id-1)*25
+        pageNo+=index+1
 
-    details_url = job.header.h2.a['href']
-    # .text.strip().replace('card_travel','')
+        print(pageNo)
 
-    # print('job title : ', title)
-    # print('company name : ', company_name)
-    # print('experience : ', extra[0].text.replace('card_travel', '').strip())
-    # print("location :", extra[1].text.replace('location_on', '').strip())
-    # print('skill : ', skill)
-    # print('job_description : ', job_description)
-    # print('\n\n\n\n\n\n')
-    experience = extra[0].text.replace('card_travel', '').strip()
-    Location = extra[1].text.replace('location_on', '').strip()
-    details_page(details_url)
+        with open(f"posts/job {pageNo}.txt", 'w', encoding='ut'
+                                                           ''
+                                                           ''
+                                                           ''
+                                                           ''
+                                                           'f8') as f:
+            f.write(f"Job title : {title} \n\n")
+            f.write(f"Company_name : {company_name} \n\n")
+            f.write(f"Experience : {experience} \n\n")
+            f.write(f"Location : {Location} \n\n")
+            f.write(f"Required Skills : {skill} \n\n")
+            f.write(f"Job_description : {job_description} \n\n")
+            f.write(f"details_url : {details_url} \n\n")
+            details_page(details_url, index, f)
 
-    with open(f"posts/job {index + 1}.txt", 'w', encoding='utf8') as f:
-        f.write(f"Job title : {title} \n\n")
-        f.write(f"Company_name : {company_name} \n\n")
-        f.write(f"Experience : {experience} \n\n")
-        f.write(f"Location : {Location} \n\n")
-        f.write(f"Required Skills : {skill} \n\n")
-        f.write(f"Job_description : {job_description} \n\n")
-        f.write(f"details_url : {details_url} \n\n")
-        f.close()
-    #     f.write(f'''
-    # Job title : {title}
-    # Company Name: {company_name}
-    # Experience : {extra[0].text.replace('card_travel', '').strip()}
-    # location : { extra[1].text.replace('location_on', '').strip()}
-    # Required Skills: {skill}
-    # job_description: {job_description}
-    # details_url: {details_url}''')
+
+idx = 1
+
+emlen = 1000
+
+while emlen > 2:
+    mainPage(idx)
+    idx += 1
+    url = f"https://www.timesjobs.com/candidate/job-search.html?from=submit&actualTxtKeywords=python&searchBy=0&rdoOperator=OR&searchType=personalizedSearch&luceneResultSize=25&postWeek=60&txtKeywords=python&pDate=I&sequence=21&startPage={idx}"
+
+    r = requests.get(url)
+
+    htmlContent = r.content
+
+    soup = BeautifulSoup(htmlContent, 'html.parser')
+
+    allEm = soup.find('div', class_='srp-pagination clearfix')
+
+    emLen = 0 if allEm is None else len(allEm.find_all('em'))

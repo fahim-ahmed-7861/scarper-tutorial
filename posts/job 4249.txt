@@ -1,0 +1,21 @@
+Job title : Python Developer 
+
+Company_name : BRICKRED TECHNOLOGIES PVT. LTD. 
+
+Experience : 0 - 3 yrs 
+
+Location :  
+
+Required Skills : image processing  ,  python  ,  opencv 
+
+Job_description : Detailed 1. Proficient in python and numerical programming ,  especially numpy ,  opencv ,  sckit-image ,  sklearn.2. Basic understanding in 3D image processin... More Details 
+
+details_url : https://www.timesjobs.com/job-detail/python-developer-brickred-technologies-pvt-ltd-0-to-3-yrs-jobid-gFvdvfbX1XdzpSvf__PLUS__uAgZw==&source=srp 
+
+Job job_des : <div class="jd-desc job-description-main" id="applyFlowHideDetails_2">
+<h3>Job Description</h3>
+		        Detailed Job Description:<br/><br/>1. Proficient in python and numerical programming, especially numpy, opencv, sckit-image, sklearn.<br/><br/>2. Basic understanding in 3D image processing, especially warping<br/><br/>3. Basic understanding in seismic image processing (geophysics/geology).<br/><br/>4. Basic understanding in 3D synthetic data generation (for CNN/deep learning) is a plus.<br/><br/>5. Experience in parallel programming is a plus.
+	        </div> 
+
+skilltype : [<span class="jd-skill-tag"><a class="" href="https://www.timesjobs.com/jobskill/image-processing-jobs" target="_blank" title="image processing Jobs">image processing</a> </span>, <span class="jd-skill-tag"><a class="" href="https://www.timesjobs.com/jobskill/python-jobs" target="_blank" title="python Jobs">python</a> </span>, <span class="jd-skill-tag"><a class="" href="https://www.timesjobs.com/jobskill/opencv-jobs" target="_blank" title="opencv Jobs">opencv</a> </span>] 
+
